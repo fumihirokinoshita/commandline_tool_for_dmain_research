@@ -10,7 +10,7 @@ import (
 	"unicode"
 )
 
-var tlds = []string{"com", "net"}
+var tlds = []string{"com", "net"} //TODO: Specifying a list of tlds using command line flags
 
 const allowedChars = "abcdefghijklmnopqrstuvwxyz0123456789_-"
 
