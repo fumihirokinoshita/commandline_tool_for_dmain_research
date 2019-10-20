@@ -50,9 +50,10 @@ $ ./coolify
 
 #### synonymas
 入力した単語の類語を検索する
-- Big Huge ThesaurusのAPI keyが必要
+- [Big Huge Thesaurus](https://words.bighugelabs.com/)のAPI keyが必要
 ```
-$ export BHT_APIKEY="Big Huge Thesaurus API Key"
+$ echo export BHT_APIKEY="Big Huge Thesaurus API Key" >> ~/.bash_profile // bashの場合。""不要
+$ source ~/.bash_profile
 $ cd $HOME/go/src/commandline_tool_for_domain_research/synonyms
 $ go build -o synonyms
 $ ./synonyms
