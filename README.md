@@ -33,7 +33,7 @@ $ ./sprinkle
 ```
 
 #### domainify
-入力した単語の後ろにTLDを追加する
+入力した単語の後ろにTLDを追加する(net or com: availableで検索するwhoisserverに対応しているのがこの二つのTLDのみであるため)
 ```
 $ cd $HOME/go/src/commandline_tool_for_domain_research/domainify
 $ go build -o domainify
@@ -57,4 +57,13 @@ $ source ~/.bash_profile
 $ cd $HOME/go/src/commandline_tool_for_domain_research/synonyms
 $ go build -o synonyms
 $ ./synonyms
+```
+
+#### available
+入力したdomainが利用可能かwho is serverに問い合わせる
+TLDは問い合わせ先serverの都合上, 対応しているのはnet comのみ
+```
+$ cd $HOME/go/src/commandline_tool_for_domain_research/available
+$ go build -o available
+$ ./available
 ```
