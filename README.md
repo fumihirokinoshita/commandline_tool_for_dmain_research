@@ -33,7 +33,8 @@ $ ./sprinkle
 ```
 
 #### domainify
-入力した単語の後ろにTLDを追加する(net or com: availableで検索するwho is serverに対応しているのがこの二つのTLDのみであるため)
+入力した単語の後ろにTLDを追加する  
+(.net or .com: availableで利用するwho is serverにおいて, 対応しているのがこの二つのTLDのみであるため)
 ```
 $ cd $HOME/go/src/commandline_tool_for_domain_research/domainify
 $ go build -o domainify
@@ -60,8 +61,8 @@ $ ./synonyms
 ```
 
 #### available
-入力したdomainが利用可能かwho is serverに問い合わせる  
-TLDは問い合わせ先serverの都合上, 対応しているのはnet comのみ
+入力したdomainが利用可能かどうか, who is serverに問い合わせる  
+TLDは問い合わせ先serverの都合上, 対応しているのは.net .comのみ
 ```
 $ cd $HOME/go/src/commandline_tool_for_domain_research/available
 $ go build -o available
@@ -71,6 +72,7 @@ $ ./available
 ### domainfinder
 上記の5つを統合したもの  
 入力から以下の順に実行した結果が出力される 
+- 利用するためには, [Big Huge Thesaurus](https://words.bighugelabs.com/)のAPI keyが必要
 1. synonyms
 2. sprinkle
 3. coolify
