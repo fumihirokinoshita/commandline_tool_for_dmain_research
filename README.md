@@ -71,7 +71,7 @@ $ ./available
 
 ### domainfinder
 上記の5つを統合したもの  
-- 利用するためには, [Big Huge Thesaurus](https://words.bighugelabs.com/)のAPI keyが必要  
+利用するためには, [Big Huge Thesaurus](https://words.bighugelabs.com/)のAPI keyが必要  
 入力から以下の順に実行した結果が出力される 
 1. synonyms
 2. sprinkle
