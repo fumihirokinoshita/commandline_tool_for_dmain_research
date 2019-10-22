@@ -60,7 +60,7 @@ $ ./synonyms
 ```
 
 #### available
-入力したdomainが利用可能かwho is serverに問い合わせる
+入力したdomainが利用可能かwho is serverに問い合わせる  
 TLDは問い合わせ先serverの都合上, 対応しているのはnet comのみ
 ```
 $ cd $HOME/go/src/commandline_tool_for_domain_research/available
