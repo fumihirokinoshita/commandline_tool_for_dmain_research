@@ -33,7 +33,7 @@ $ ./sprinkle
 ```
 
 #### domainify
-入力した単語の後ろにTLDを追加する(net or com: availableで検索するwhoisserverに対応しているのがこの二つのTLDのみであるため)
+入力した単語の後ろにTLDを追加する(net or com: availableで検索するwho is serverに対応しているのがこの二つのTLDのみであるため)
 ```
 $ cd $HOME/go/src/commandline_tool_for_domain_research/domainify
 $ go build -o domainify
@@ -66,4 +66,19 @@ TLDは問い合わせ先serverの都合上, 対応しているのはnet comの�
 $ cd $HOME/go/src/commandline_tool_for_domain_research/available
 $ go build -o available
 $ ./available
+```
+
+#### domainfinder
+入力から以下の順に実行した結果が出力される 
+1. synonyms
+2. sprinkle
+3. coolify
+4. domainify
+5. available
+```
+$ cd $HOME/go/src/commandline_tool_for_domain_research/domainfinder
+$ chmod 755 build.sh
+$ ./build.sh
+$ go build -o domainfinder
+$ ./domainfinder
 ```
